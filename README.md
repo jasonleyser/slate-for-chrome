@@ -1,10 +1,38 @@
-![logo](https://ph-files.imgix.net/e79e05a9-d243-4c9e-a4d4-81db41fb98dc.png?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=20&h=20&fit=crop&dpr=2)
+<img src="https://i.ibb.co/pKfPgfj/image.png" width="45px">
 
 # slate-for-chrome
-The easiest way to add images and screenshots to Slate.
+The fastest way to add images and screenshots to [Slate](https://agenocrm.com/).
 
 **right-click** on any image to upload.
 
 **alt+s** to take a screenshot of any website.
 
 ![screenshot](https://i.ibb.co/9gqGFwP/GALLERY-1.png)
+
+
+# Installation
+
+1. Clone the repo `git clone https://github.com/jasonleyser/slate-for-chrome.git`
+2. Open Chrome and navigate to `chrome://extensions`
+3. Click the `Load unpacked` button
+4. Load the `chrome-for-slate` repo folder
+
+
+# Setup
+1. Get your free [Slate API key](https://slate.host/_)
+2. Open the `Slate` extension from the toolbar
+3. Click on the top right `gear icon`
+4. Enter your API key and click `save`
+
+Done! You can start uploading.
+
+![screenshot](https://i.ibb.co/sJDqh6h/GALLERY-3.png)
+
+# Usage
+
+#### Right Click
+- Any image  >  Slate  >  Add image
+- Any tab > Slate > Take screenshot
+
+#### Shortcuts
+- **Alt+s** take a screenshot
