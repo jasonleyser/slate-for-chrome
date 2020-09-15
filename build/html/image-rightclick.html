@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Uploader</title>
+    <link rel="stylesheet" href="../../src/fonts/font-400.css" />
+    <link rel="stylesheet" href="../../src/fonts/font-600.css" />
+    <link rel="stylesheet" href="../../src/css/styles.css" />
+    <link rel="stylesheet" href="../../src/css/bootstrap.min.css" />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #000;
+        color: #1b1f23;
+        height: auto;
+        width: 232px;
+        position: relative;
+        display: block;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-dark" style="background-color: #000;">
+            <a class="navbar-brand" href="#">
+              <img
+                src="../../src/images/logo.png"
+                width="52px"
+                class="d-inline-block logoNoHover"
+                alt="logo"
+              />
+            </a>
+          </nav>
+          <p class="filePreview">
+            File preview
+          </p>
+          <img width="100%" id="imagePreview" class="imagePreview" />
+
+          <select class="select" id="slates">
+            <option value="default">Select a Slate</option>
+          </select>
+
+          <button class="saveBtn" id="uploadButton">
+            Upload
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="../background/image-rightclick.js"
+    ></script>
+  </body>
+</html>

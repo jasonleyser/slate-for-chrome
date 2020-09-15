@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Slate Uploader</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="../../src/fonts/font-400.css" />
+    <link rel="stylesheet" href="../../src/fonts/font-600.css" />
+    <link rel="stylesheet" href="../../src/css/styles.css" />
+    <link rel="stylesheet" href="../../src/css/bootstrap.min.css" />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #000;
+        color: #1b1f23;
+        width: 232px;
+        position: relative;
+        display: block;
+        color: #fff;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="pageButtons">
+        <nav class="navbar navbar-dark" style="background-color: #000;">
+          <a class="navbar-brand" href="#">
+            <img
+              src="../../src/images/logo.png"
+              width="52px"
+              class="d-inline-block logoNoHover"
+              alt="logo"
+            />
+          </a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link opacity" href="#">
+                <img
+                  id="setttingIcon"
+                  src="../../src/images/settings-icon.png"
+                  width="14px"
+                  class="opacity"
+                  style="margin-right: -16px !important; margin-top: 16px;"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="row">
+          <div class="col-12" style="margin-bottom: -8px;">
+            <div
+              id="homeDangerMessage"
+              class="dangerHome alert alert-danger"
+              role="alert"
+            ></div>
+            <div
+              id="homeSuccessMessage"
+              class="successHome alert alert-success"
+              role="alert"
+            ></div>
+            <h4 class="settingsTitle">
+              Upload queue
+            </h4>
+            <p id="queueMessage"></p>
+            <p id="queueMessageHelp" class="queueMessageHelp">
+              Show me more >
+            </p>
+            <div id="rowQueue" class="row no-gutters rowQueue"></div>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;" id="pageSettings">
+        <nav class="navbar navbar-dark" style="background-color: #000;">
+          <a class="navbar-brand" href="#">
+            <img
+              src="../../src/images/logo.png"
+              width="52px"
+              class="d-inline-block logo"
+              alt="logo"
+              id="settingsHomeLink"
+            />
+          </a>
+          <ul class="navbar-nav">
+            <a
+              class="nav-link newApi"
+              id="settingTopLinkNewApi"
+              href="#"
+              class="opacity"
+            >
+              + New API
+            </a>
+          </ul>
+        </nav>
+
+        <div class="row">
+          <div class="col-12">
+            <h4 class="settingsTitle" id="settingsTitle">
+              Update your api
+            </h4>
+
+            <div class="input-group mb-3">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Add your API key"
+                style="font-size: 12px; border-radius: 2px;"
+                id="apiKeyInput"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-primary"
+                  style="font-size: 12px; border-radius: 2px;"
+                  type="button"
+                  id="saveSettings"
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../background/popup.js"></script>
+    <script type="text/javascript" src="../background/upload.js"></script>
+    <script src="../../src/scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../src/scripts/jquery.min.js"></script>
+    <script src="../../src/scripts/bootstrap.min.js"></script>
+  </body>
+</html>
