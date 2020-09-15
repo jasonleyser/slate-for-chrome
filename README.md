@@ -1,6 +1,10 @@
-# Slate-for-Chrome
-Effortlessly add images and screenshots to Slate from any website.
+![logo](https://ph-files.imgix.net/e79e05a9-d243-4c9e-a4d4-81db41fb98dc.png?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=20&h=20&fit=crop&dpr=2)
 
-No need to download the file to your computer. Just right-click and upload.
+# slate-for-chrome
+The easiest way to add images and screenshots to Slate.
 
-![screenshot](https://ph-files.imgix.net/a79488d5-3a51-4f76-86a3-60ed8de298ab.png)
+**right-click** on any image to upload.
+
+**alt+s** to take a screenshot of any website.
+
+![screenshot](https://i.ibb.co/9gqGFwP/GALLERY-1.png)
