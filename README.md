@@ -1,7 +1,7 @@
 <img src="https://i.ibb.co/pKfPgfj/image.png" width="45px">
 
 # slate-for-chrome
-The fastest way to add images and screenshots to [Slate](https://agenocrm.com/).
+The fastest way to add images and screenshots to [Slate](https://github.com/filecoin-project/slate).
 
 **right-click** on any image to upload.
 
@@ -32,7 +32,7 @@ Done! You can start uploading.
 
 #### Right Click
 - Any image  >  Slate  >  Add image
-- Any tab > Slate > Take screenshot
+- Any webpage  >  Slate  >  Take screenshot
 
 #### Shortcuts
-- **Alt+s** take a screenshot
+- `Alt+s` take a screenshot
