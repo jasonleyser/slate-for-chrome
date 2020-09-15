@@ -1,7 +1,7 @@
 <img src="https://i.ibb.co/pKfPgfj/image.png" width="45px">
 
 # slate-for-chrome
-The fastest way to add images and screenshots to [Slate](https://github.com/filecoin-project/slate).
+The fastest way to upload images and screenshots to [Slate](https://github.com/filecoin-project/slate).
 
 **right-click** on any image to upload.
 
@@ -20,11 +20,11 @@ The fastest way to add images and screenshots to [Slate](https://github.com/file
 
 # Setup
 1. Get your free [Slate API key](https://slate.host/_)
-2. Open the `Slate` extension from the toolbar
+2. Open the `Slate` Chrome extension from the toolbar
 3. Click on the top right `gear icon`
 4. Enter your API key and click `save`
 
-Done! You can start uploading.
+Done! You can start uploading now.
 
 ![screenshot](https://i.ibb.co/sJDqh6h/GALLERY-3.png)
 
