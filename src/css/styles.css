@@ -1,0 +1,157 @@
+button {
+  outline: 0;
+  border: 0;
+  padding: 8px 26px 8px 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 200ms ease all;
+  user-select: none;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  margin-top: 16px;
+  font-size: 12px !important;
+}
+
+.select {
+  width: 100%;
+  border-radius: 2px;
+  outline: 0;
+  border: 0;
+  padding: 8px 8px 8px 8px;
+  background-color: #36383d;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  cursor: pointer;
+  text-align-last: center;
+  margin-bottom: 8px;
+  font-size: 12px !important;
+}
+.box {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.logoNoHover {
+  display: inline-block;
+  opacity: 0.6;
+  margin-left: -16px !important;
+  margin-bottom: -16px !important;
+  opacity: 0.6;
+  cursor: default;
+}
+.logo {
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.6;
+  margin-left: -16px !important;
+  margin-bottom: -16px !important;
+  transition: 600ms ease all;
+}
+.logo:hover {
+  opacity: 1;
+  transition: 600ms ease all;
+}
+.saveBtn {
+  width: 100%;
+  background-color: #0061bb;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  cursor: pointer;
+  transition: 400ms ease all;
+  margin-right: 8px;
+  border-radius: 2px;
+}
+.saveBtn:hover {
+  background-color: #0169c9;
+  color: #fff;
+  cursor: pointer;
+  transition: 600ms ease all;
+}
+.settingsTitle {
+  font-weight: 400;
+  font-size: 14px;
+}
+.queueMessage {
+  cursor: pointer;
+  color: #807d78;
+  font-size: 12px;
+}
+.queueMessage:hover {
+  color: #fbc67a;
+  transition: 600ms ease all;
+}
+.queueMessageLink {
+  color: #fbc67a;
+  cursor: pointer;
+  font-size: 10px;
+}
+.queueMessageLink:hover {
+  color: #fff;
+  transition: 600ms ease all;
+}
+.queueMessageHelp {
+  color: #807d78;
+  font-size: 12px;
+  margin-top: -12px;
+}
+.queueMessageHelp:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 600ms ease all;
+}
+.rowQueue {
+  display: none;
+  margin-bottom: 4px;
+}
+.opacity {
+  opacity: 0.6;
+}
+.opacity:hover {
+  opacity: 1 !important;
+  transition: 600ms ease all !important;
+}
+.signup {
+  margin-right: -16px !important;
+  margin-top: 12px !important;
+  display: none !important;
+}
+.newApi {
+  margin-right: -16px !important;
+  margin-top: 12px !important;
+}
+.filePreview {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.navbar {
+  margin-top: -16px;
+}
+.successHome {
+  margin-left: -16px !important;
+  margin-right: -16px !important;
+  background-color: #63b182 !important;
+  color: #fff !important;
+  border: 0 !important;
+  border-radius: 0px !important;
+  display: none;
+}
+.dangerHome {
+  margin-left: -16px !important;
+  margin-right: -16px !important;
+  background-color: #e45757 !important;
+  color: #fff !important;
+  border: 0 !important;
+  border-radius: 0px !important;
+  cursor: pointer !important;
+  display: none;
+}
+.imagePreview {
+  border-radius: 2px;
+  margin-bottom: 8px;
+}

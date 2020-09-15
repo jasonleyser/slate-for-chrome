@@ -1,0 +1,41 @@
+{
+  "name": "Slate",
+  "description": "Upload images to Slate from anywhere on the web.",
+  "version": "0.5",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "activeTab",
+    "storage",
+    "https://slate.host/",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["build/background/contextMenu.js", "build/background/upload.js"]
+  },
+  "commands": {
+    "screenshot": {
+      "suggested_key": {
+        "default": "Alt+S",
+        "mac": "Alt+S"
+      },
+      "description": "Take a screenshot"
+    }
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "src/images/icon16.png",
+      "24": "src/images/icon48.png",
+      "32": "src/images/icon128.png"
+    },
+    "default_title": "Slate",
+    "default_popup": "build/html/popup.html"
+  },
+  "manifest_version": 2,
+  "offline_enabled": true,
+  "icons": {
+    "16": "src/images/icon16.png",
+    "48": "src/images/icon48.png",
+    "128": "src/images/icon128.png"
+  }
+}
