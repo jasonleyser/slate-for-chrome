@@ -8,38 +8,6 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 });
 //
 //
-//Get API Key from Local Storage
-async function getAPIKey() {
-  var storage = new Promise(function (resolve, reject) {
-    chrome.storage.local.get({ apiKey: true }, function (options) {
-      resolve(options.apiKey);
-    });
-  });
-
-  try {
-    const getAPIKey = await storage;
-    return getAPIKey;
-  } catch (e) {
-    return "Can not retrieve API Key";
-  }
-}
-//
-//
-//
-function dataURLtoBlob(dataurl) {
-  var arr = dataurl.split(","),
-    bstr = atob(arr[1]),
-    n = bstr.length,
-    u8arr = new Uint8Array(n);
-  var mime = dataurl.split(",")[0].split(":")[1].split(";")[0];
-
-  while (n--) {
-    u8arr[n] = bstr.charCodeAt(n);
-  }
-  return new Blob([u8arr], { mime });
-}
-//
-//
 //
 function addToQueue(id, filename, source) {
   chrome.storage.local.get(function (result) {

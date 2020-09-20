@@ -1,33 +1,3 @@
-function getUrlVars() {
-  var vars = {};
-  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (
-    m,
-    key,
-    value
-  ) {
-    vars[key] = value;
-  });
-  return vars;
-}
-//
-//
-//Get API Key from Local Storage
-async function getAPIKey() {
-  var storage = new Promise(function (resolve, reject) {
-    chrome.storage.local.get({ apiKey: true }, function (options) {
-      resolve(options.apiKey);
-    });
-  });
-
-  try {
-    const getAPIKey = await storage;
-    return getAPIKey;
-  } catch (e) {
-    return "Can not retrieve API Key";
-  }
-}
-//
-//
 //Convert image to base64
 function convertImgToBase64URL(url, callback, outputFormat) {
   var img = new Image();
@@ -35,14 +5,14 @@ function convertImgToBase64URL(url, callback, outputFormat) {
   img.onload = function () {
     var canvas = document.createElement("CANVAS"),
       ctx = canvas.getContext("2d"),
-      dataURL;
+      data_url;
     canvas.height = img.height;
     canvas.width = img.width;
     ctx.drawImage(img, 0, 0);
-    dataURL = canvas.toDataURL(outputFormat);
-    callback(dataURL);
+    data_url = canvas.toDataURL(outputFormat);
+    callback(data_url);
     canvas = null;
-    document.getElementById("imagePreview").src = dataURL;
+    image_preview.src = data_url;
   };
   img.src = url;
 }
@@ -51,34 +21,27 @@ function convertImgToBase64URL(url, callback, outputFormat) {
 //File Upload onclick listener
 document.addEventListener("DOMContentLoaded", function () {
   image = getUrlVars()["url"];
-  document.getElementById("imagePreview").src = image;
+  image_preview.src = image;
 
   convertImgToBase64URL(image, function (base64Img) {});
   _handleGetSlates();
 
-  document
-    .getElementById("uploadButton")
-    .addEventListener("click", _handleClick);
+  upload_button.addEventListener("click", _handleClick);
 });
 
 //handle upload after submit
 _handleClick = () => {
-  const image = document.getElementById("imagePreview").src;
-  const imageSource = getUrlVars()["url"];
-
-  const slateOptions = document.getElementById("slates");
-  const slateSelectedID =
-    slateOptions.options[slateOptions.selectedIndex].value;
-  const slateSelectedName =
-    slateOptions.options[slateOptions.selectedIndex].text;
+  const image_source = getUrlVars()["url"];
+  const slate_name = slates_select.options[slates_select.selectedIndex].text;
+  const slate_id = slates_select.options[slates_select.selectedIndex].value;
 
   chrome.runtime.sendMessage(
     {
       msg: "image",
-      url: image,
-      slateName: slateSelectedName,
-      slateId: slateSelectedID,
-      source: imageSource,
+      url: image_preview.src,
+      slateName: slate_name,
+      slateId: slate_id,
+      source: image_source,
     },
     (response) => {
       console.log(response);
@@ -105,13 +68,11 @@ _handleGetSlates = async () => {
     }),
   });
   const json = await response.json();
-  console.log(json);
   for (var i = 0; i < json.slates.length; i++) {
     var slates = json.slates[i];
-    var select = document.getElementById("slates");
     var addOption = document.createElement("option");
     addOption.value = slates.id;
     addOption.innerHTML = slates.slatename;
-    select.appendChild(addOption);
+    slates_select.appendChild(addOption);
   }
 };
