@@ -11,7 +11,11 @@
     "<all_urls>"
   ],
   "background": {
-    "scripts": ["build/background/contextMenu.js", "build/background/upload.js"]
+    "scripts": [
+      "build/background/contextMenu.js",
+      "build/background/upload.js",
+      "build/background/functions.js"
+    ]
   },
   "commands": {
     "screenshot": {
