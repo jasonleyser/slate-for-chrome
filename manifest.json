@@ -1,7 +1,7 @@
 {
   "name": "Slate",
   "description": "Upload images to Slate from anywhere on the web.",
-  "version": "0.5",
+  "version": "0.6",
   "permissions": [
     "contextMenus",
     "tabs",
