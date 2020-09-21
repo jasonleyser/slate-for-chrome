@@ -1,6 +1,9 @@
 <img src="https://i.ibb.co/pKfPgfj/image.png" width="45px">
 
 # slate-for-chrome
+[![Chrome store badge](https://badgen.net/chrome-web-store/v/gloembacbehhbfbkcfjmloikeeaebnoc)](https://chrome.google.com/webstore/detail/slate/gloembacbehhbfbkcfjmloikeeaebnoc)
+
+
 The fastest way to upload images and screenshots to [Slate](https://github.com/filecoin-project/slate).
 
 **right-click** on any image to upload.
