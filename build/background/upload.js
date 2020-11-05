@@ -74,7 +74,7 @@ _handleFileUpload = async (imageUrl, slateName, slateId, source) => {
   let data = new FormData();
   data.append("data", file);
   const response = await fetch(
-    "https://slate.host/api/v1/upload-data/" + slateId,
+    "https://uploads.slate.host/api/public/" + slateId,
     {
       method: "POST",
       headers: {
